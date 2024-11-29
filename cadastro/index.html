@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="box">
+        <img src="images/logo.png" alt="logo" class="spy">
+        <div class="form">
+            <h1 class="title">Seja bem-vindo!</h1>
+            <div class="input">
+ 
+                <input class="field" type="text" placeholder="Usuário...">
+                <input class="field" type="text" placeholder="E-mail...">
+                <input id="password" class="field" type="text" placeholder="Senha...">
+                <input id="password" class="field" type="text" placeholder="Confirmar senha...">
+            <div class="buttons">
+                <button class="button">Criar</button>
+                <button class="button" id="button2">Voltar</button>
+            </div>
+    </div>
+
+    <script>
+        const password = document.getElementById("password");
+        password.setAttribute('type', 'password')
+
+
+        function click(){
+            var openeye = document.getElementById("open-eye");
+            var closeeye = document.getElementById("close-eye");
+
+            if(window.getComputedStyle(closeeye).display === "inline"){
+                closeeye.style.display = "none";
+                openeye.style.display = "inline";
+                password.setAttribute('type', 'text')
+                console.log("DEU CERTO");
+            }else{
+                closeeye.style.display = "inline";
+                openeye.style.display = "none";
+                password.setAttribute('type', 'password')
+            }
+            
+            console.log("clicou");
+        }
+    </script>
+</body>
+</html>
