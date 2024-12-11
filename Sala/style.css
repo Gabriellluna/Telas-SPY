@@ -1,13 +1,14 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #0077cc; 
+    background: linear-gradient(to bottom, #020283, #000000);
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 100vh;
+    height: 97vh;
+    width: 98vw;
 }
 
 header {
@@ -16,7 +17,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #005fa3;
+    max-height: 50px;
 }
 
 /*.placar {
@@ -28,12 +29,8 @@ header {
 }*/
 
 .mesa {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    width: 80%;
-    height: 80%;
-    background-color: #005fa3;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
     position: relative;
 }
@@ -64,3 +61,24 @@ header {
 .jogador3 { top: 20%; right: 10%; transform: translateY(-50%); }
 .jogador4 { top: 42%; right: 0%; transform: translateX(-50%); }
 .jogador5 { bottom: 10%; left: 50%; transform: translate( -50%); }
+
+
+.carta1{
+    border: 1px solid #ff0051;
+}
+
+.carta2{
+    border-color: 1px solid #006eff;
+}
+
+.header-element-1 img{
+    aspect-ratio: 40/55;
+    max-height: 70px;
+    margin-left: 25px;
+}
+
+.header-element-2{
+    display: flex;
+    gap: 10px;
+    margin-right: 25px;
+}
